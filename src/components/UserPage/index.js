@@ -21,7 +21,7 @@ function UserPage({name,email}){
             </header>
             <section style={{display: "flex",justifyContent:"start",gap:"1rem" ,padding: "10px",alignItems:"start"}}>
                 
-                <div><img src={image} alt="image" style={{borderRadius:"70%",width: "50px",height:"50px"}}/></div>
+                <div><img src={image} alt=" " style={{borderRadius:"70%",width: "50px",height:"50px"}}/></div>
                 <div>
                     <p style={{fontSize:"0.8rem",fontWeight:"800"}}>{user.name}</p>
                     <p style={{fontSize:"0.8rem",fontWeight:"400"}}>{user.email}</p>
