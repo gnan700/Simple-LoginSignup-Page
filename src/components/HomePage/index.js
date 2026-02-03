@@ -7,8 +7,10 @@ function Homepage (){
 
     const navigate = useNavigate();
 
-    const [wordsArray,setWordsArray] = useState(()=>{
-        return generate({exactly: 10, join: " "});
+    const [wordsArray] = useState(() => {
+  return `👋 Welcome back, ${getUser()?.name || "User"}! You can manage your account settings here.`;
+});
+
     });
 
     return(
