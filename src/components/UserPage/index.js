@@ -9,7 +9,7 @@ function UserPage({name,email}){
     const user = getUser();
 
 
-    const [wordsArray, setWordsArray] = useState(() => {
+    const [wordsArray] = useState(() => {
   return `👋 Welcome back, ${getUser()?.name || "User"}! You can manage your account settings here.`;
 });
 
