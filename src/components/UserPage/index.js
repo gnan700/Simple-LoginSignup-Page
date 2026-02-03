@@ -1,6 +1,5 @@
 import React ,{useState}from 'react';
 import "./index.css";
-import { generate } from 'random-words';
 import image from "../assets/loginImg1.png";
 import { getUser} from '../LocalStorageUtils';
 
