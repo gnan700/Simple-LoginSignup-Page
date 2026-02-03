@@ -1,6 +1,5 @@
 import React,{useState} from "react";
 import "./index.css";
-import { generate } from "random-words";
 import { useNavigate } from "react-router-dom";
 import Input from "../Input";
 import { getUser } from "../LocalStorageUtils";
