@@ -3,7 +3,7 @@ import "./index.css";
 import { generate } from "random-words";
 import { useNavigate } from "react-router-dom";
 import Input from "../Input";
-import { getUser, saveUser } from "../LocalStorageUtils";
+import { getUser } from "../LocalStorageUtils";
 
 function LoginPage() {
 
@@ -12,9 +12,10 @@ function LoginPage() {
     const navigate = useNavigate();
     
 
-    const [wordsArray,setWordsArray] = useState(()=>{
-        return generate({exactly: 10, join: " "});
-    });
+    const [wordsArray ] = useState(() => {
+  return `👋 Welcome back, ${getUser()?.name || "User"}! You can manage your account settings here.`;
+});
+
 
     const handleLogin = () => {
         const storedUser = getUser();
